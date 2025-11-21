@@ -1,0 +1,433 @@
+/* ========================================================= */
+/* 🛠️ KODE CSS FINAL (KOREKSI LAYOUT & MEDIA QUERY)          */
+/* ========================================================= */
+
+html, body {
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+    background-color: transparent; 
+}
+
+body {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    font-size: 20px;
+}
+
+.pp {
+    position: absolute;
+    margin-left: 260px;
+    margin-top: 70px;
+    width: 400px;
+    height: 400px;
+}
+
+/* SISI KIRI */
+.left-side {
+    background-color: #008cff;
+    background-image: url('.../background.png');
+    background-size: auto;
+}
+.left-container {
+    margin-top: 500px; 
+    margin-left: 100px;
+}
+.left-title-box {
+    background-color: black;
+    color: white;
+    width: 220px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.left-value {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+.left-list {
+    margin-bottom: 10px;
+}
+.link-list {
+    display: flex;
+    text-decoration: none;
+}
+.link-list:link {
+    color: black;
+}
+.link-list:visited {
+    color: black;
+}
+.left-list-dot {
+    height: 50px;
+    width: 10px;
+    background-color: black;
+}
+.left-list-icon {
+    width: 50px;
+    margin-bottom: -5px;
+}
+.left-list-text {
+    border-bottom-style: solid;
+    align-self: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 10px;
+}
+.left-list-title {
+    font-size: 23px;
+    font-weight: bold;
+    border-bottom-style: solid;
+    border-color: white;
+}
+.left-list-time {
+    font-weight: bold;
+}
+.left-subject-title {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.left-subject-container {
+    width: 350px;
+    color: black;
+    background-color: #f1f1f1;
+}
+.left-subject-value {
+    padding: 0.01em 16px;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+}
+
+/* SISI KANAN - Konten Teks */
+.right-side {
+    background-color: transparent; 
+    color: white;
+    position: relative; 
+    z-index: 1; 
+}
+
+/* ☁️ KODE AWAN (TIDAK BERUBAH) */
+.awan-megamendung-fixed {
+    position: fixed; 
+    top: 0;
+    left: 35%; 
+    width: 65%; 
+    height: 100vh; 
+    z-index: -1; 
+    background-color: black; 
+    overflow: hidden; 
+}
+.awan-megamendung-fixed div {
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/megamendung.png'); 
+    background-repeat: repeat-x; 
+}
+@keyframes gerakHorizontalCepat {
+    from { background-position-x: 0; }
+    to { background-position-x: 1000px; } 
+}
+@keyframes gerakHorizontalSedang {
+    from { background-position-x: 0; }
+    to { background-position-x: 1500px; } 
+}
+@keyframes gerakHorizontalLambat {
+    from { background-position-x: 0; }
+    to { background-position-x: 2000px; } 
+}
+
+.awan-megamendung-fixed {
+    background-size: auto 650px; 
+    background-position: 0 -250px; 
+    animation: gerakHorizontalCepat 28s linear infinite; 
+}
+.awan-layer-2 {
+    background-size: auto 580px; 
+    background-position: 500px -180px; 
+    animation: gerakHorizontalCepat 33s linear infinite; 
+    animation-delay: -5s;
+}
+.awan-layer-3 {
+    background-size: auto 450px; 
+    background-position: -200px -100px;
+    animation: gerakHorizontalSedang 40s linear infinite; 
+    animation-delay: -15s;
+}
+.awan-layer-4 {
+    background-size: auto 380px; 
+    background-position: 800px -50px;
+    animation: gerakHorizontalSedang 45s linear infinite; 
+    animation-delay: -25s;
+}
+.awan-layer-5 {
+    background-size: auto 300px; 
+    background-position: -400px 0px; 
+    animation: gerakHorizontalSedang 50s linear infinite; 
+    animation-delay: -35s;
+}
+.awan-layer-6 {
+    background-size: auto 250px; 
+    background-position: 200px 50px;
+    animation: gerakHorizontalLambat 55s linear infinite; 
+    animation-delay: -45s;
+}
+.awan-layer-7 {
+    background-size: auto 180px; 
+    background-position: -600px 100px;
+    animation: gerakHorizontalLambat 65s linear infinite; 
+    animation-delay: -55s;
+}
+.awan-layer-8 {
+    background-size: auto 120px; 
+    background-position: 100px 180px;
+    animation: gerakHorizontalLambat 75s linear infinite; 
+    animation-delay: -65s;
+}
+.awan-layer-9 {
+    background-size: auto 80px; 
+    background-position: 700px 230px;
+    animation: gerakHorizontalLambat 85s linear infinite; 
+    animation-delay: -75s;
+}
+.awan-layer-10 {
+    background-size: auto 60px; 
+    background-position: -100px 280px;
+    animation: gerakHorizontalLambat 95s linear infinite; 
+    animation-delay: -85s;
+}
+/* AKHIR KODE AWAN 10 LAPIS */
+
+.name-container {
+    margin-top: 150px;
+    text-align: -webkit-right;
+
+}
+.name-profile {
+    width: 600px; 
+    background-color: #008cff;
+    text-align: left;
+    font-size: 60px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.name-profile-text {
+    margin-left: 15px;
+    flex-grow: 0;
+    color: black;
+}
+.name-profile-divider-master {
+    flex-grow: 1;
+    margin-left: 15px;
+}
+.name-profile-divider {
+    height: 10px;
+    background-color: black;
+}
+.name-profile-divider-first {
+    margin-bottom: 10px;
+    height: 5px;
+    background-color: #000080;
+}
+.name-profile-divider-last {
+    margin-top: 10px;
+    height: 5px;
+    background-color: #000080;
+}
+.nick-profile {
+    text-align: left;
+    width: 600px; 
+    font-size: 40px;
+    font-weight: bold;
+}
+.nick-profile-box {
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+}
+.desc-first {
+    margin-top: 50px;
+    text-align: left;
+    width: 600px; 
+}
+.desc-first-text {
+    width: 550px; 
+    text-align: justify;
+}
+.desc-last {
+    margin-top: 20px;
+    text-align: left;
+    width: 600px; 
+}
+.desc-last-text {
+    width: 550px; 
+    text-align: justify;
+}
+.right-container {
+    margin-top: 105px;
+}
+.right-title-box {
+    background-color: #FFD700;
+    color: black;
+    width: 350px; 
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+.right-value {
+    margin-left: 50px;
+}
+.right-title {
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 25px;
+    color: #008cff;
+}
+.right-time {
+    margin-top: 15px;
+    width: 150px;
+    border-bottom-style: solid;
+    border-color: #008cff;
+    font-weight: bold;
+}
+.right-value-text {
+    margin-top: 10px;
+    text-align: justify;
+    margin-right: 30px;
+}
+.right-value-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    font-size: 23px;
+    font-weight: bold;
+    color: #008cff;
+    max-width: 600px; 
+}
+.right-value-item {
+    width: 300px;
+    margin: 10px auto;
+    text-align: center;
+}
+.sosmed-container {
+    margin-top: 25px;
+    text-align: -webkit-right;
+    border-radius: 8px;
+}
+.sosmed-content {
+    background-color: #008cff;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 8px;
+}
+.sosmed {
+    margin-left: 15px;
+    flex-grow: 0;
+    color: black;
+    display: flex;
+}
+.sosmed-text {
+    letter-spacing: 3px;
+    align-self: center;
+    margin-right: 15px;
+}
+.sosmed-divider-master {
+    flex-grow: 1;
+    margin-left: 15px;
+}
+.sosmed-divider {
+    height: 8px;
+    background-color: black;
+}
+.sosmed-divider-first {
+    margin-bottom: 10px;
+    height: 3px;
+    background-color: #ffffff;
+}
+.sosmed-divider-last {
+    margin-top: 10px;
+    height: 3px;
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 1200px) {
+    .pp {
+        margin-left: 180px; 
+        margin-top: 50px;
+        width: 300px;     
+        height: 300px;
+    }
+    .name-container, 
+    .desc-first,
+    .desc-last,
+    .nick-profile {
+        width: 500px; 
+    }
+    
+    .name-profile {
+        font-size: 40px; 
+    }
+    .nick-profile {
+        font-size: 30px; 
+    }
+    
+    .desc-first-text, 
+    .desc-last-text {
+        width: 450px; 
+        font-size: 16px; 
+    }
+    .right-value-container {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .pp {
+        margin-left: 100px; 
+        width: 250px;     
+        height: 250px;
+    }
+    .left-container {
+        margin-top: 350px; 
+        margin-left: 50px;
+    }
+    
+    .name-container, 
+    .desc-first,
+    .desc-last,
+    .nick-profile {
+        width: 400px; 
+    }
+    
+    .right-title-box {
+        width: 280px; 
+        font-size: 25px;
+        padding-left: 30px;
+    }
+    .right-value {
+        margin-left: 30px;
+    }
+    .right-value-item {
+        width: 100%; 
+    }
+}
